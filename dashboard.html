@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WD Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="auth.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body class="dashboard-body">
+  <div class="sidebar">
+    <h2>WD PANEL</h2>
+    <a class="active">Dashboard</a>
+    <a href="#" id="logout-link">Logout</a>
+  </div>
+  <div class="content">
+    <h1>Withdraw Data</h1>
+    <table id="wd-table">
+      <thead>
+        <tr>
+          <th>Username</th>
+          <th>Bank + Rek + Nama</th>
+          <th>Nominal</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <tr><td colspan="4">Loading...</td></tr>
+      </tbody>
+    </table>
+    <p id="error-msg"></p>
+  </div>
+</body>
+</html>
